@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../url-short-fe/build")));
+app.use(express.static(path.join(__dirname, "build")));
 
 const long_to_short_url_store = new Map();
 const short_url_store = new Set();
